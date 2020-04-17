@@ -1,0 +1,6 @@
+Câu 4 : Các phương thức vòng đời được gọi khi ứng dụng đang chạy :
+	+ Và người sử dụng bấm vào nút Back là: onPause() -> onStop() -> onDestroy()
+	+ Và sau đó mở lại ứng dụng là : onCreate() -> onStart() -> onResume()
+Câu 5 : Các phương thức vòng đời được gọi khi ứng dụng đang chạy :
+	+ Và sau đó người sử dụng ấn nút Home là :  onPause() -> onStop()
+	+ Và sau đó mở lại ứng dụng là : onRestart() -> onStart() -> onResume()

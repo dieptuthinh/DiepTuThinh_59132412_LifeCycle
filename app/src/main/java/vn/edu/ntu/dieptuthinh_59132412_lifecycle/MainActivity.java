@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    protected void onPostResume() {
-        super.onPostResume();
+    protected void onResume() {
+        super.onResume();
         Log.d("LifeCycle", "onResume callded");
     }
 
@@ -39,6 +39,10 @@ public class MainActivity extends AppCompatActivity
     protected void onStart() {
         super.onStart();
         Log.d("LifeCycle", "onStart callded");
+        txtTG = findViewById(R.id.txtTG);
+        SimpleDateFormat spf = new SimpleDateFormat("HH:mm:ss");
+        String strDate = spf.format(new Date());
+        txtTG.setText(strDate);
     }
 
     @Override
@@ -50,13 +54,13 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("LifeCycle", "onCreate callded");
+        Log.d("LifeCycle", "onDestroy callded");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d("LifeCycle", "onDestroy callded");
+        Log.d("LifeCycle", "onPause callded");
     }
 
     @Override
