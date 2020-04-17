@@ -4,3 +4,7 @@ Câu 4 : Các phương thức vòng đời được gọi khi ứng dụng đang
 Câu 5 : Các phương thức vòng đời được gọi khi ứng dụng đang chạy :
 	+ Và sau đó người sử dụng ấn nút Home là :  onPause() -> onStop()
 	+ Và sau đó mở lại ứng dụng là : onRestart() -> onStart() -> onResume()
+Câu 6 :  Nếu cần lưu thông tin của ứng dụng để khôi phục lại trạng thái hiển thị của ứng dụng khi chạy lại ứng dụng thì cần phải thực hiện trong phương thức vòng đời :
+            ==> onPause().
+- Vì nó được gọi khi hệ thống chuẩn bị chuyển sang một activity khác. Phương thức này thường dùng để ghi các thay đổi chưa được lưu, dừng hoạt hình và những công việc tốn CPU khác, 
+v.v.. đóng những tài nguyên truy cập độc quyền như camera.
